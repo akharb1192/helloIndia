@@ -13,6 +13,6 @@ func helloWorld(response http.ResponseWriter, req *http.Request) {
 func main() {
 	fmt.Println("Hello World!")
 	http.HandleFunc("/hello", helloWorld)
-	err := http.ListenAndServe(":8080", nil)
+	err := http.ListenAndServe(":3000", nil)
 	log.Fatal(err)
 }
